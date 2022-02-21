@@ -158,3 +158,27 @@ a:hover{color: var(--link-hover-color);}
 a:active{color: var(--link-active-color);}
 a:visited{color: var(--link-visited-color);}
 a:visited:hover{color: var(--link-hover-color);}
+
+/*
+MAIN
+*/
+#top_section{
+    background-image: url(img/banner.jpg);
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--top-main-color);
+    height: 502px;
+    margin-bottom: 24px;
+}
+#h_top_section{
+    font-size: 30px;
+}
+#top_section_container{
+    width: 700px;
+    padding: 305px 0px 0px 60px;
+}
+.ratius{border-radius: 10px;}
+.text>h3{
+    color: var(--h-color);
+    margin: 30px 0px 20px 0;
+}
