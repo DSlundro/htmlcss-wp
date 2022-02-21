@@ -205,6 +205,11 @@ MAIN
 #bottom_section img{
     width: 100%;
 }
+#bottom_section img{
+    object-fit: cover;
+    height: 240px;
+    filter: brightness(80%);
+}
 .text>h3{
     color: var(--h-color);
     margin: 15px 0px 15px 0;
@@ -223,11 +228,6 @@ FLOATED SECTION
     height: 100%;
     width: 56%;
     margin: 0px 24px;
-}
-#bottom_section img{
-    object-fit: cover;
-    height: 240px;
-    filter: brightness(80%);
 }
 #right{
     float: left;
