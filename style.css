@@ -232,3 +232,21 @@ FLOATED SECTION
     height: 100%;
     width: 20%;
 }
+
+/*
+FOOTER
+*/
+footer{
+    color: black;
+    margin: 0 auto;
+    height: 63px;
+    width: 1200px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #B1B1B1;
+}
+
+#heart{
+    color: red;
+}
