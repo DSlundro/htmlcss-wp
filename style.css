@@ -163,12 +163,11 @@ a:visited:hover{color: var(--link-hover-color);}
 MAIN
 */
 #top_section{
-    background-image: url(img/banner.jpg);
-    background-position: center;
     background-color: rgba(0, 0, 0, 0.5);
     color: var(--top-main-color);
     height: 502px;
     margin-bottom: 24px;
+    position: relative;
 }
 #h_top_section{
     font-size: 30px;
@@ -177,17 +176,59 @@ MAIN
     width: 700px;
     padding: 305px 0px 0px 60px;
 }
-.ratius{border-radius: 10px;}
-.text>h3{
-    color: var(--h-color);
-    margin: 30px 0px 20px 0;
+#banner{        /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+    border-radius: 10px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1200px;
+    height: 502px;
+    object-fit: cover;
 }
+.ratius{border-radius: 10px;}
 
-main>#central_section{
+#central_section{
     height: 100px;
     margin-bottom: 24px;
 }
 #central_section>h2{
     color: var(--h-color);
     font-size: 40px;
+}
+
+#bottom_section{
+    height: 600px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+#bottom_section img{
+    width: 100%;
+}
+.text>h3{
+    color: var(--h-color);
+    margin: 15px 0px 15px 0;
+}
+
+/*
+FLOATED SECTION
+*/
+#left{
+    float: left;
+    height: 100%;
+    width: 20%;
+}
+#center{
+    float: left;
+    height: 100%;
+    width: 56%;
+    margin: 0px 24px;
+}
+#bottom_section img{
+    object-fit: cover;
+    height: 240px;
+}
+#right{
+    float: left;
+    height: 100%;
+    width: 20%;
 }
