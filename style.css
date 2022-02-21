@@ -1,20 +1,14 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.clearfix{
-    content: "";
-    display: table;
-    clear: both;
-}
-body{
+/*
+            DEBUG SECTION                               <------------
+*/
+.debug body{
     background-color: rgb(247, 211, 199);
 }
+
 /*
 HEADER
 */
-header{
+.debug header{
     background-color: aqua;
     height: 100px;
 
@@ -23,7 +17,7 @@ header{
 /*
 NAV
 */
-nav{
+.debug nav{
     background-color: chartreuse;
     height: 52px;
     margin-bottom: 24px;
@@ -32,22 +26,22 @@ nav{
 /*
 MAIN
 */
-main{
+.debug main{
     margin: 0 auto;
     width: 1200px;
 }
-main>#top_section{
+.debug main>#top_section{
     background-color: brown;
     height: 502px;
     margin-bottom: 24px;
 }
-main>#central_section{
+.debug main>#central_section{
     background-color: darkorange;
     height: 100px;
     margin-bottom: 24px;
 
 }
-main>#bottom_section{
+.debug main>#bottom_section{
     background-color: rgb(143, 231, 165);
     height: 540px;
     width: 100%;
@@ -57,20 +51,20 @@ main>#bottom_section{
 /*
 FLOATED SECTION
 */
-#left{
+.debug #left{
     background-color: aqua;
     float: left;
     height: 100%;
     width: 23%;
 }
-#center{
+.debug #center{
     background-color: aqua;
     float: left;
     height: 100%;
     width: 50%;
     margin: 0px 24px;
 }
-#right{
+.debug #right{
     background-color: aqua;
     float: left;
     height: 100%;
@@ -80,7 +74,7 @@ FLOATED SECTION
 /*
 PICTURE'S SECTION
 */
-.pic{
+.debug .pic{
     background-color: crimson;
     height: 203px;
     width: 100%;
@@ -89,7 +83,54 @@ PICTURE'S SECTION
 /*
 FOOTER
 */
-footer{
+.debug footer{
     background-color: blue;
     height: 63px;
+}
+
+/*
+            MAIN SITE                               <------------
+*/
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+.clearfix{ content: ""; display: table; clear: both;}
+
+:root{
+    --link-normal-color: #B1B1B1;
+    --link-hover-color: #5f5f5f;
+    --link-active-color: #B1B1B1;
+    --link-visited-color: #B1B1B1;
+    --header-border-color: #d6d6d6;
+    --top-main-color: white;
+    --bg-color: rgb(240, 240, 240);
+    --h-color: black;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--link-normal-color);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/*
+HEADER
+*/
+header{
+    position: relative;
+    margin: 0 auto;
+    height: 100px;
+}
+#logo_img{
+    float: left;
+    width: 170px;
+}
+#logo{
+    width: 180px;
+    height: 70px;
+    border-right: 1px solid var(--header-border-color);
 }
