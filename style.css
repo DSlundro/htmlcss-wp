@@ -122,7 +122,6 @@ HEADER
 */
 header{
     position: relative;
-    margin: 0 auto;
     height: 100px;
 }
 #logo_img{
@@ -134,3 +133,28 @@ header{
     height: 70px;
     border-right: 1px solid var(--header-border-color);
 }
+
+/*
+NAV
+*/
+nav{
+    margin: 0 auto;
+    height: 52px;
+    margin-bottom: 15px;
+}
+#nav_bar {
+    position: relative;
+    left: -10px;
+}
+li {
+    float: left;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+}
+a{text-decoration:none;}
+a:link{color :var(--link-normal-color);}
+a:hover{color: var(--link-hover-color);}
+a:active{color: var(--link-active-color);}
+a:visited{color: var(--link-visited-color);}
+a:visited:hover{color: var(--link-hover-color);}
