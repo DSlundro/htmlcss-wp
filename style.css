@@ -102,12 +102,12 @@ FOOTER
     --link-visited-color: #B1B1B1;
     --header-border-color: #d6d6d6;
     --top-main-color: white;
-    --bg-color: rgb(240, 240, 240);
+    --bg-color: white;
     --h-color: black;
 }
 
 body{
-    background-color: var(--bg-color);
+    background-color: var(white);
     color: var(--link-normal-color);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -181,4 +181,13 @@ MAIN
 .text>h3{
     color: var(--h-color);
     margin: 30px 0px 20px 0;
+}
+
+main>#central_section{
+    height: 100px;
+    margin-bottom: 24px;
+}
+#central_section>h2{
+    color: var(--h-color);
+    font-size: 40px;
 }
